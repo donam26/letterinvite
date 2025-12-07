@@ -472,10 +472,10 @@ function OnlinePage({ onBack, onNavigate }) {
           </ul>
         </div>
 
-        {/* Bảng chi phí */}
+        {/* Gói tài trợ */}
         <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
           <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <DollarSign className="w-6 h-6 text-emerald-500" /> Bảng chi phí
+            <DollarSign className="w-6 h-6 text-emerald-500" /> Gói tài trợ
           </h3>
           
           {/* Chi phí một lần */}
