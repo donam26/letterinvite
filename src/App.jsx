@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import { 
   Users, Bot, Globe, 
   School, Send, ChevronRight, Building2, ChevronLeft,
@@ -8,7 +9,13 @@ import {
 import AboutPage from './pages/AboutPage'
 import ProfilePage from './pages/ProfilePage'
 import InternationalPage from './pages/InternationalPage'
+import InternationalOfflinePage from './pages/InternationalOfflinePage'
+import InternationalOnlinePage from './pages/InternationalOnlinePage'
 import UniversityPage from './pages/UniversityPage'
+import UniversityOfflinePage from './pages/UniversityOfflinePage'
+import UniversityOnlinePage from './pages/UniversityOnlinePage'
+import OfflinePage from './pages/OfflinePage'
+import OnlinePage from './pages/OnlinePage'
 
 function Page1() {
   const navigate = useNavigate()
@@ -232,6 +239,7 @@ function IntroPage() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Page1 />} />
         <Route path="/about" element={<AboutPage />} />
@@ -242,15 +250,19 @@ function App() {
         <Route path="/international" element={<InternationalPage />} />
         <Route path="/international/about" element={<AboutPage basePath="/international" />} />
         <Route path="/international/profile" element={<ProfilePage basePath="/international" />} />
+        <Route path="/international/offline" element={<InternationalOfflinePage />} />
+        <Route path="/international/online" element={<InternationalOnlinePage />} />
         
         {/* University routes - độc lập */}
         <Route path="/university" element={<UniversityPage />} />
         <Route path="/university/about" element={<AboutPage basePath="/university" />} />
         <Route path="/university/profile" element={<ProfilePage basePath="/university" />} />
+        <Route path="/university/offline" element={<UniversityOfflinePage />} />
+        <Route path="/university/online" element={<UniversityOnlinePage />} />
         
-        {/* Placeholder routes - sẽ thêm nội dung sau */}
-        <Route path="/online" element={<div className="min-h-screen flex items-center justify-center">Trang Online - Sẽ cập nhật sau</div>} />
-        <Route path="/offline" element={<div className="min-h-screen flex items-center justify-center">Trang Offline - Sẽ cập nhật sau</div>} />
+        {/* Online & Offline routes */}
+        <Route path="/online" element={<OnlinePage />} />
+        <Route path="/offline" element={<OfflinePage />} />
       </Routes>
     </BrowserRouter>
   )
