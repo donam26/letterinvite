@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ChevronLeft, FileText, Info, Send, Globe, Phone, Mail,
+  ChevronLeft, FileText, Send, Globe, Phone, Mail,
   Users, CheckCircle, Bot, Gift, HandMetal, GraduationCap, Building2
 } from 'lucide-react'
 
@@ -11,7 +11,7 @@ function UniversityOnlinePage() {
 
   const handleSubmit = (e) => { 
     e.preventDefault()
-    alert('Cảm ơn Quý Trường đã đăng ký Gói đồng hành Online!') 
+    alert('Cảm ơn Quý Trường đã đăng ký Gói Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động!') 
   }
 
   return (
@@ -25,9 +25,6 @@ function UniversityOnlinePage() {
             <span className="font-bold text-lg text-white">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate('/university/about')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate('/university/profile')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
               <FileText className="w-4 h-4" /> Hồ sơ năng lực
             </button>
@@ -69,7 +66,7 @@ function UniversityOnlinePage() {
             </div>
             <div>
               <p className="text-[#1E63F9] text-sm font-medium">Hình thức 2</p>
-              <h2 className="text-xl font-bold text-slate-900">Đồng hành Online</h2>
+              <h2 className="text-xl font-bold text-slate-900">Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động</h2>
             </div>
           </div>
 
@@ -126,11 +123,12 @@ function UniversityOnlinePage() {
             <div className="bg-[#1E63F9]/5 rounded-xl p-5 border border-[#1E63F9]/20">
               <div className="flex items-center gap-2 mb-3">
                 <Bot className="w-5 h-5 text-[#1E63F9]" />
-                <span className="font-bold text-[#1E63F9]">Đào tạo Chatbot AI</span>
+                <span className="font-bold text-[#1E63F9]">Tài trợ tài khoản tuyển sinh trên nền tảng</span>
               </div>
+              <p className="text-sm text-slate-600 mb-1">Cung cấp và đào tạo AI về dữ liệu tuyển sinh tới cộng đồng học sinh</p>
               <p className="text-sm text-slate-600 mb-1">01 lần duy nhất (đã bao gồm 8% VAT)</p>
               <p className="text-lg font-bold text-[#1E63F9]">Cam kết</p>
-              <p className="text-sm text-slate-600">tiếp cận trực tiếp với <strong>1,000 học sinh</strong> hàng năm</p>
+              <p className="text-sm text-slate-600">tiếp cận ít nhất <strong>1,000 mục tiêu</strong> theo tiêu chí tuyển sinh</p>
               <div className="mt-3 pt-3 border-t border-[#1E63F9]/20">
                 <p className="text-sm text-slate-500">5.000.000 VNĐ</p>
               </div>
@@ -138,7 +136,7 @@ function UniversityOnlinePage() {
             <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
               <div className="flex items-center gap-2 mb-3">
                 <Building2 className="w-5 h-5 text-amber-600" />
-                <span className="font-bold text-amber-800">Chi phí thường niên</span>
+                <span className="font-bold text-amber-800">Tài trợ phí vận hành thường niên</span>
               </div>
               <p className="text-sm text-slate-600 mb-1">Đã bao gồm 8% VAT</p>
               <p className="text-sm text-slate-600">Căn cứ vào kịch bản chăm sóc và số lượng học sinh truy cập</p>
@@ -187,9 +185,9 @@ function UniversityOnlinePage() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-700">
               <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">1.</span><span>Hai bên ký hợp đồng tài trợ</span></li>
-              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">2.</span><span>Quý Trường chuyển khoản <strong>70% chi phí tài trợ</strong></span></li>
-              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">3.</span><span>InterEdu đào tạo Chatbot trong vòng <strong>60 ngày</strong></span></li>
-              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">4.</span><span>Sau nghiệm thu, tài trợ <strong>30% còn lại</strong> và sử dụng <strong>12 tháng</strong></span></li>
+              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">2.</span><span>Quý Trường thanh toán giá trị tài trợ mở tài khoản (<strong>5 triệu VNĐ</strong>)</span></li>
+              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">3.</span><span>InterEdu đào tạo Chatbot trong vòng <strong>30 ngày</strong></span></li>
+              <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">4.</span><span>Sau nghiệm thu, được sử dụng <strong>miễn phí 12 tháng đầu tiên</strong></span></li>
               <li className="flex items-start gap-2"><span className="font-bold text-[#1E63F9]">5.</span><span>Sau 12 tháng, tài trợ chi phí thường niên cho gói tiếp theo</span></li>
             </ul>
           </div>
@@ -198,7 +196,7 @@ function UniversityOnlinePage() {
           <div className="bg-white rounded-xl p-5 border-2 border-[#1E63F9]/30">
             <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
               <Send className="w-5 h-5 text-[#1E63F9]" />
-              Đăng ký đồng hành Online
+              Đăng ký Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động
             </h4>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -270,7 +268,10 @@ function UniversityOnlinePage() {
         <div className="text-center text-white/80">
           <p className="mb-2">Xin chân thành cảm ơn và kính chúc Quý Trường ngày càng phát triển bền vững!</p>
           <p className="text-white/60 text-sm">Trân trọng,</p>
-          <p className="font-bold text-[#FFD447]">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</p>
+          <p className="font-bold text-[#FFD447] mb-4">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</p>
+          <p className="font-bold text-white text-sm leading-relaxed max-w-3xl mx-auto">
+            Đây là chương trình vì cộng đồng, Quý Trường (hoặc Quý Đơn vị) có thể liên hệ trực tiếp với chúng tôi để sử dụng cổng hướng nghiệp phục vụ cho mục tiêu tuyển sinh riêng của Quý Trường (hoặc Quý Đơn vị).
+          </p>
         </div>
       </div>
     </section>

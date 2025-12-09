@@ -4,9 +4,8 @@ import ScrollToTop from './components/ScrollToTop'
 import { 
   Users, Bot, Globe, 
   School, Send, ChevronRight, Building2, ChevronLeft,
-  Sparkles, FileText, Info
+  Sparkles, FileText
 } from 'lucide-react'
-import AboutPage from './pages/AboutPage'
 import ProfilePage from './pages/ProfilePage'
 import InternationalPage from './pages/InternationalPage'
 import InternationalOfflinePage from './pages/InternationalOfflinePage'
@@ -45,13 +44,6 @@ function Page1() {
             </div>
           </div>
           <nav className="flex items-center gap-3">
-            <button 
-              onClick={() => navigate('/about')}
-              className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium hover:bg-white/20 transition-all"
-            >
-              <Info className="w-4 h-4" />
-              Về chúng tôi
-            </button>
             <button 
               onClick={() => navigate('/profile')}
               className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium hover:bg-white/20 transition-all"
@@ -120,7 +112,7 @@ function Page1() {
               <Bot className="w-5 h-5 text-emerald-500 group-hover:text-white transition-colors" />
             </div>
             <h3 className="font-bold text-slate-900 text-sm">Chi tiết khung</h3>
-            <p className="text-emerald-600 font-bold">Tuyển sinh đồng hành Online</p>
+            <p className="text-emerald-600 font-bold">Tuyển sinh Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động</p>
             <ChevronRight className="w-4 h-4 text-slate-400 mt-2 group-hover:translate-x-1 transition-all" />
           </button>
           
@@ -156,9 +148,6 @@ function IntroPage() {
             <span className="font-bold text-lg text-slate-900">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate('/about')} className="flex items-center gap-2 text-slate-600 font-medium hover:text-[#1E63F9] transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate('/profile')} className="flex items-center gap-2 text-slate-600 font-medium hover:text-[#1E63F9] transition-colors">
               <FileText className="w-4 h-4" /> Hồ sơ năng lực
             </button>
@@ -248,34 +237,29 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Page1 />} />
-        <Route path="/about" element={<AboutPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/detail/intro" element={<IntroPage />} />
         
         {/* International routes - độc lập */}
         <Route path="/international" element={<InternationalPage />} />
-        <Route path="/international/about" element={<AboutPage basePath="/international" />} />
         <Route path="/international/profile" element={<ProfilePage basePath="/international" />} />
         <Route path="/international/offline" element={<InternationalOfflinePage />} />
         <Route path="/international/online" element={<InternationalOnlinePage />} />
         
         {/* University routes - độc lập */}
         <Route path="/university" element={<UniversityPage />} />
-        <Route path="/university/about" element={<AboutPage basePath="/university" />} />
         <Route path="/university/profile" element={<ProfilePage basePath="/university" />} />
         <Route path="/university/offline" element={<UniversityOfflinePage />} />
         <Route path="/university/online" element={<UniversityOnlinePage />} />
         
         {/* Exam Prep routes - độc lập */}
         <Route path="/exam-prep" element={<ExamPrepPage />} />
-        <Route path="/exam-prep/about" element={<AboutPage basePath="/exam-prep" />} />
         <Route path="/exam-prep/profile" element={<ProfilePage basePath="/exam-prep" />} />
         <Route path="/exam-prep/offline" element={<ExamPrepOfflinePage />} />
         <Route path="/exam-prep/online" element={<ExamPrepOnlinePage />} />
         
         {/* Language Center routes - độc lập */}
         <Route path="/language-center" element={<LanguageCenterPage />} />
-        <Route path="/language-center/about" element={<AboutPage basePath="/language-center" />} />
         <Route path="/language-center/profile" element={<ProfilePage basePath="/language-center" />} />
         <Route path="/language-center/offline" element={<LanguageCenterOfflinePage />} />
         <Route path="/language-center/online" element={<LanguageCenterOnlinePage />} />

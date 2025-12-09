@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ChevronLeft, FileText, Info, Send, Globe, Phone, Mail,
+  ChevronLeft, FileText, Send, Globe, Phone, Mail,
   Users, CheckCircle, Sparkles, Gift, HandMetal, Bot, ExternalLink
 } from 'lucide-react'
 
@@ -11,7 +11,7 @@ function OnlinePage() {
 
   const handleSubmit = (e) => { 
     e.preventDefault()
-    alert('Cảm ơn Quý Đơn vị đã đăng ký Gói đồng hành Online!') 
+    alert('Cảm ơn Quý Đơn vị đã đăng ký Gói Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động!') 
   }
 
   return (
@@ -25,9 +25,6 @@ function OnlinePage() {
             <span className="font-bold text-lg text-white">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate('/about')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate('/profile')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
               <FileText className="w-4 h-4" /> Hồ sơ năng lực
             </button>
@@ -113,7 +110,7 @@ function OnlinePage() {
             </div>
             <div>
               <p className="text-[#1E63F9] text-sm font-medium">Hình thức 2</p>
-              <h2 className="text-xl font-bold text-slate-900">Đồng hành Online</h2>
+              <h2 className="text-xl font-bold text-slate-900">Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động</h2>
             </div>
           </div>
 
@@ -256,7 +253,7 @@ function OnlinePage() {
           <div className="bg-white rounded-xl p-5 border-2 border-[#1E63F9]/30">
             <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
               <Send className="w-5 h-5 text-[#1E63F9]" />
-              Đăng ký đồng hành Online
+              Đăng ký Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động
             </h4>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

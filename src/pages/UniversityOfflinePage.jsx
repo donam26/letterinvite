@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ChevronLeft, FileText, Info, Send, Globe, Phone, Mail,
+  ChevronLeft, FileText, Send, Globe, Phone, Mail,
   Users, CheckCircle, Sparkles, Gift, HandMetal, MapPin, GraduationCap
 } from 'lucide-react'
 
@@ -25,9 +25,6 @@ function UniversityOfflinePage() {
             <span className="font-bold text-lg text-white">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate('/university/about')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate('/university/profile')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
               <FileText className="w-4 h-4" /> Hồ sơ năng lực
             </button>

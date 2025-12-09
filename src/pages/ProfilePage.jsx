@@ -2,13 +2,12 @@ import { useNavigate } from 'react-router-dom'
 import { 
   Phone, Mail, 
   Building2, ChevronLeft,
-  FileText, Info, MapPin, Target, Users, GraduationCap, Heart, ArrowRight, ArrowDown, HeartHandshake
+  FileText, MapPin, Target, Users, GraduationCap, Heart, ArrowRight, ArrowDown, HeartHandshake
 } from 'lucide-react'
 
 function ProfilePage({ basePath = '' }) {
   const navigate = useNavigate()
   const backPath = basePath || '/'
-  const aboutPath = basePath ? `${basePath}/about` : '/about'
 
   return (
     <section className="min-h-screen bg-slate-50">
@@ -21,9 +20,6 @@ function ProfilePage({ basePath = '' }) {
             <span className="font-bold text-lg text-slate-900">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate(aboutPath)} className="flex items-center gap-2 text-slate-600 font-medium hover:text-[#1E63F9] transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate(backPath)} className="flex items-center gap-2 text-[#1E63F9] font-medium hover:underline">
               <ChevronLeft className="w-4 h-4" /> Quay lại
             </button>
@@ -242,11 +238,11 @@ function ProfilePage({ basePath = '' }) {
           {/* Số liệu - khung vàng */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
-              <p className="text-3xl font-black text-slate-900">50+</p>
+              <p className="text-3xl font-black text-slate-900">300+</p>
               <p className="text-sm text-slate-800 font-medium">Trường THPT</p>
             </div>
             <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
-              <p className="text-3xl font-black text-slate-900">10,000+</p>
+              <p className="text-3xl font-black text-slate-900">109,000+</p>
               <p className="text-sm text-slate-800 font-medium">Học sinh</p>
             </div>
             <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">

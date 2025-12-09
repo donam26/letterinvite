@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import {
-  ChevronLeft, FileText, Info, Globe, Phone,
+  ChevronLeft, FileText, Globe, Phone,
   Users, CheckCircle, Sparkles, Bot, MapPin, ChevronRight, Building2, BookOpen
 } from 'lucide-react'
 
@@ -23,9 +23,6 @@ function ExamPrepPage() {
             <span className="font-bold text-lg text-white">InterEdu</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => navigate('/exam-prep/about')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
-              <Info className="w-4 h-4" /> Về chúng tôi
-            </button>
             <button onClick={() => navigate('/exam-prep/profile')} className="flex items-center gap-2 text-white/80 font-medium hover:text-white transition-colors">
               <FileText className="w-4 h-4" /> Hồ sơ năng lực
             </button>
@@ -146,7 +143,7 @@ function ExamPrepPage() {
               </div>
               <div>
                 <p className="text-[#1E63F9] text-sm font-medium">Hình thức 2</p>
-                <h3 className="text-lg font-bold text-slate-900">Đồng hành Online</h3>
+                <h3 className="text-lg font-bold text-slate-900">Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động</h3>
               </div>
             </div>
             <p className="text-slate-600 mb-4">Cộng đồng hướng nghiệp trên website</p>
