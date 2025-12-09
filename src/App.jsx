@@ -14,6 +14,12 @@ import InternationalOnlinePage from './pages/InternationalOnlinePage'
 import UniversityPage from './pages/UniversityPage'
 import UniversityOfflinePage from './pages/UniversityOfflinePage'
 import UniversityOnlinePage from './pages/UniversityOnlinePage'
+import ExamPrepPage from './pages/ExamPrepPage'
+import ExamPrepOfflinePage from './pages/ExamPrepOfflinePage'
+import ExamPrepOnlinePage from './pages/ExamPrepOnlinePage'
+import LanguageCenterPage from './pages/LanguageCenterPage'
+import LanguageCenterOfflinePage from './pages/LanguageCenterOfflinePage'
+import LanguageCenterOnlinePage from './pages/LanguageCenterOnlinePage'
 import OfflinePage from './pages/OfflinePage'
 import OnlinePage from './pages/OnlinePage'
 
@@ -259,6 +265,20 @@ function App() {
         <Route path="/university/profile" element={<ProfilePage basePath="/university" />} />
         <Route path="/university/offline" element={<UniversityOfflinePage />} />
         <Route path="/university/online" element={<UniversityOnlinePage />} />
+        
+        {/* Exam Prep routes - độc lập */}
+        <Route path="/exam-prep" element={<ExamPrepPage />} />
+        <Route path="/exam-prep/about" element={<AboutPage basePath="/exam-prep" />} />
+        <Route path="/exam-prep/profile" element={<ProfilePage basePath="/exam-prep" />} />
+        <Route path="/exam-prep/offline" element={<ExamPrepOfflinePage />} />
+        <Route path="/exam-prep/online" element={<ExamPrepOnlinePage />} />
+        
+        {/* Language Center routes - độc lập */}
+        <Route path="/language-center" element={<LanguageCenterPage />} />
+        <Route path="/language-center/about" element={<AboutPage basePath="/language-center" />} />
+        <Route path="/language-center/profile" element={<ProfilePage basePath="/language-center" />} />
+        <Route path="/language-center/offline" element={<LanguageCenterOfflinePage />} />
+        <Route path="/language-center/online" element={<LanguageCenterOnlinePage />} />
         
         {/* Online & Offline routes */}
         <Route path="/online" element={<OnlinePage />} />

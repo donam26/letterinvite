@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { 
-  Users, Phone, Mail, 
+  Phone, Mail, 
   Building2, ChevronLeft,
-  FileText, User, Banknote, Info, MapPin
+  FileText, Info, MapPin, Target, Users, GraduationCap, Heart, ArrowRight, ArrowDown, HeartHandshake
 } from 'lucide-react'
 
 function ProfilePage({ basePath = '' }) {
@@ -31,215 +31,279 @@ function ProfilePage({ basePath = '' }) {
         </div>
       </header>
 
-      <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1E63F9]/10 text-[#1E63F9] font-medium mb-4">
             <FileText className="w-4 h-4" />
             Hồ sơ năng lực
           </div>
-          <h1 className="text-3xl font-black text-slate-900 mb-2">GIẤY CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP</h1>
-          <p className="text-slate-600">CÔNG TY TRÁCH NHIỆM HỮU HẠN HAI THÀNH VIÊN TRỞ LÊN</p>
+          <h1 className="text-3xl font-black text-slate-900 mb-2">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</h1>
+          <p className="text-slate-600">Đồng hành cùng học sinh trong hành trình định hướng nghề nghiệp</p>
         </div>
 
-        {/* Quốc hiệu */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg mb-6 text-center">
-          <p className="text-red-600 font-bold text-lg">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
-          <p className="text-slate-900 font-semibold">Độc lập - Tự do - Hạnh Phúc</p>
-          <div className="w-24 h-0.5 bg-slate-300 mx-auto mt-2"></div>
-          <p className="text-slate-600 mt-4 text-sm">SỞ TÀI CHÍNH THÀNH PHỐ HÀ NỘI</p>
-          <p className="text-slate-600 text-sm">PHÒNG ĐĂNG KÝ KINH DOANH VÀ TÀI CHÍNH DOANH NGHIỆP</p>
-        </div>
-
-        {/* Thông tin công ty */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
-          <h2 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <Building2 className="w-6 h-6 text-[#1E63F9]" />
-            1. Tên công ty
-          </h2>
-          <div className="space-y-3 pl-9">
-            <div>
-              <p className="text-sm text-slate-500">Tên công ty viết bằng tiếng Việt:</p>
-              <p className="font-bold text-slate-900">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</p>
-            </div>
-            <div>
-              <p className="text-sm text-slate-500">Tên công ty viết bằng tiếng nước ngoài:</p>
-              <p className="font-bold text-slate-900">INTEREDU EDUCATIONAL SOLUTION COMPANY LIMITED</p>
-            </div>
-            <div>
-              <p className="text-sm text-slate-500">Tên công ty viết tắt:</p>
-              <p className="font-bold text-slate-900">INTEREDU EDUCATIONAL SOLUTION CO.,LTD</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Địa chỉ */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
-          <h2 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-            <MapPin className="w-6 h-6 text-[#1E63F9]" />
-            2. Địa chỉ trụ sở chính
-          </h2>
-          <div className="pl-9 space-y-3">
-            <p className="text-slate-700">Lô A14 đường Nguyễn Cảnh Dị, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t">
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-slate-400" />
-                <span className="text-slate-600">0977087008</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-slate-400" />
-                <span className="text-slate-600">Giabachhanoi1405@gmail.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Vốn điều lệ */}
-        <div className="bg-gradient-to-r from-[#1E63F9] to-[#0D4FD9] rounded-2xl p-6 shadow-lg mb-6 text-white">
-          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
-            <Banknote className="w-6 h-6" />
-            3. Vốn điều lệ
-          </h2>
-          <div className="pl-9">
-            <p className="text-3xl font-black">1.000.000.000 VNĐ</p>
-            <p className="text-white/80">Bằng chữ: Một tỷ đồng</p>
-          </div>
-        </div>
-
-        {/* Mã số doanh nghiệp */}
-        <div className="bg-amber-50 rounded-2xl p-6 border border-amber-200 mb-6">
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <div>
-              <p className="text-amber-800 font-medium">Mã số doanh nghiệp</p>
-              <p className="text-2xl font-black text-amber-900">0111082142</p>
-            </div>
-            <div>
-              <p className="text-amber-800 font-medium">Đăng ký lần đầu</p>
-              <p className="text-lg font-bold text-amber-900">09/06/2025</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Danh sách thành viên góp vốn */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
+        {/* Section 1: Giấy phép ĐKKD */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
           <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-            <Users className="w-6 h-6 text-[#1E63F9]" />
-            4. Danh sách thành viên góp vốn
+            <Building2 className="w-6 h-6 text-[#1E63F9]" />
+            Giấy chứng nhận đăng ký kinh doanh
+          </h2>
+          <div className="w-full rounded-xl overflow-hidden border-2 border-slate-200">
+            <iframe
+              src="/interedu.pdf"
+              title="Giấy chứng nhận đăng ký kinh doanh"
+              className="w-full h-[600px] md:h-[800px]"
+            />
+          </div>
+          <div className="mt-6 bg-amber-50 rounded-xl p-4 border border-amber-200">
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <div>
+                <p className="text-amber-800 font-medium text-sm">Mã số doanh nghiệp</p>
+                <p className="text-xl font-black text-amber-900">0111082142</p>
+              </div>
+              <div>
+                <p className="text-amber-800 font-medium text-sm">Đăng ký lần đầu</p>
+                <p className="text-lg font-bold text-amber-900">09/06/2025</p>
+              </div>
+              <div>
+                <p className="text-amber-800 font-medium text-sm">Vốn điều lệ</p>
+                <p className="text-lg font-bold text-amber-900">1.000.000.000 VNĐ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 2: Tiêu chí hoạt động - Mô hình hoạt động InterEdu */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
+          <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+            <Target className="w-6 h-6 text-[#1E63F9]" />
+            Mô hình hoạt động của InterEdu
           </h2>
           
-          <div className="space-y-4">
-            {/* Thành viên 1 */}
-            <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#1E63F9] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
-                  1
+          {/* Flowchart */}
+          <div className="space-y-6">
+            {/* Row 1: Quỹ đối tác + InterEdu tại mỗi nhà trường */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+              {/* Quỹ đối tác đồng hành tài trợ */}
+              <div className="lg:col-span-3 bg-emerald-50 border-2 border-emerald-300 rounded-xl p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <HeartHandshake className="w-5 h-5 text-emerald-600" />
+                  <h3 className="font-bold text-emerald-800">Quỹ Đối tác</h3>
                 </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-slate-900 text-lg">NGUYỄN ANH QUÂN</h3>
-                  <p className="text-slate-500 text-sm">Quốc tịch: Việt Nam</p>
-                  <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                      <p className="text-xs text-slate-500">Địa chỉ liên lạc</p>
-                      <p className="text-sm text-slate-700">P112A1 Tập thể Phố Giảng Võ, Phường Giảng Võ, Quận Ba Đình, Thành phố Hà Nội</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-slate-500">Số CCCD</p>
-                      <p className="text-sm text-slate-700">001087012547</p>
-                    </div>
+                <p className="text-sm text-emerald-700">Đồng hành tài trợ</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="lg:col-span-1 flex items-center justify-center">
+                <ArrowRight className="w-8 h-8 text-[#1E63F9] hidden lg:block" />
+                <ArrowDown className="w-8 h-8 text-[#1E63F9] lg:hidden" />
+              </div>
+
+              {/* InterEdu tại mỗi nhà trường */}
+              <div className="lg:col-span-8 bg-[#1E63F9]/5 border-2 border-[#1E63F9] rounded-xl p-4">
+                <h3 className="font-bold text-[#1E63F9] mb-3 text-center">InterEdu tại mỗi nhà trường THPT hàng năm</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="bg-white rounded-lg p-3 border border-slate-200">
+                    <span className="inline-flex items-center justify-center w-6 h-6 bg-[#1E63F9] text-white rounded-full text-sm font-bold mr-2">1</span>
+                    <span className="text-sm text-slate-700">Hạ tầng quản lý hướng nghiệp của nhà trường</span>
                   </div>
-                  <div className="mt-3 flex items-center gap-6">
-                    <div className="bg-emerald-100 px-3 py-1 rounded-full">
-                      <span className="text-emerald-700 font-bold">500.000.000 VNĐ</span>
-                    </div>
-                    <div className="bg-blue-100 px-3 py-1 rounded-full">
-                      <span className="text-blue-700 font-bold">50%</span>
-                    </div>
+                  <div className="bg-white rounded-lg p-3 border border-slate-200">
+                    <span className="inline-flex items-center justify-center w-6 h-6 bg-[#1E63F9] text-white rounded-full text-sm font-bold mr-2">2</span>
+                    <span className="text-sm text-slate-700">Đồng hành tổ chức ngày hội hướng nghiệp cho học sinh</span>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 border border-slate-200">
+                    <span className="inline-flex items-center justify-center w-6 h-6 bg-[#1E63F9] text-white rounded-full text-sm font-bold mr-2">3</span>
+                    <span className="text-sm text-slate-700">Các chương trình bồi dưỡng, tập huấn miễn phí, dự án hướng nghiệp</span>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 border border-slate-200">
+                    <span className="inline-flex items-center justify-center w-6 h-6 bg-[#1E63F9] text-white rounded-full text-sm font-bold mr-2">4</span>
+                    <span className="text-sm text-slate-700">Hạ tầng hướng nghiệp, khám phá bản thân, đánh giá năng lực miễn phí cho học sinh</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Thành viên 2 */}
-            <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#1E63F9] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
-                  2
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-slate-900 text-lg">NGUYỄN XUÂN ANH</h3>
-                  <p className="text-slate-500 text-sm">Quốc tịch: Việt Nam</p>
-                  <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                      <p className="text-xs text-slate-500">Địa chỉ liên lạc</p>
-                      <p className="text-sm text-slate-700">P62A2 Tập thể Phố Trần Quốc Toản, Phường Hàng Bài, Quận Hoàn Kiếm, Thành phố Hà Nội</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-slate-500">Số CCCD</p>
-                      <p className="text-sm text-slate-700">001082010513</p>
-                    </div>
-                  </div>
-                  <div className="mt-3 flex items-center gap-6">
-                    <div className="bg-emerald-100 px-3 py-1 rounded-full">
-                      <span className="text-emerald-700 font-bold">500.000.000 VNĐ</span>
-                    </div>
-                    <div className="bg-blue-100 px-3 py-1 rounded-full">
-                      <span className="text-blue-700 font-bold">50%</span>
-                    </div>
-                  </div>
-                </div>
+            {/* Arrow down */}
+            <div className="flex justify-center">
+              <ArrowDown className="w-8 h-8 text-[#1E63F9]" />
+            </div>
+
+            {/* Row 2: Khảo sát + Giới thiệu + Dự án */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              {/* Khảo sát 80% số HS */}
+              <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-4">
+                <h3 className="font-bold text-orange-800 mb-2">Khảo sát 80% số HS</h3>
+                <ul className="text-sm text-orange-700 space-y-1">
+                  <li>→ Nhu cầu nghề nghiệp</li>
+                  <li>→ Kỹ năng cần rèn luyện</li>
+                </ul>
+              </div>
+
+              {/* Giới thiệu cộng đồng */}
+              <div className="bg-purple-50 border-2 border-purple-300 rounded-xl p-4">
+                <h3 className="font-bold text-purple-800 mb-2">Giới thiệu cộng đồng nghiệp edu.vn</h3>
+                <ul className="text-sm text-purple-700 space-y-1">
+                  <li>→ Học sinh khám phá bản thân</li>
+                  <li>→ Học sinh tham gia GDNL</li>
+                  <li>→ Học sinh được định hướng và rèn luyện</li>
+                </ul>
+              </div>
+
+              {/* Dự án hướng nghiệp */}
+              <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-4">
+                <h3 className="font-bold text-blue-800 mb-2">Dự án hướng nghiệp</h3>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>→ Học sinh tham gia cuộc thi, dự án</li>
+                  <li>→ Tài trợ học bổng cho học sinh</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Arrow down */}
+            <div className="flex justify-center">
+              <ArrowDown className="w-8 h-8 text-[#1E63F9]" />
+            </div>
+
+            {/* Row 3: Kết nối */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {/* Kết nối tư vấn */}
+              <div className="bg-teal-50 border-2 border-teal-300 rounded-xl p-4">
+                <h3 className="font-bold text-teal-800 mb-2">Kết nối</h3>
+                <p className="text-sm text-teal-700">Tư vấn miễn phí cho học sinh</p>
+              </div>
+
+              {/* Kết nối hướng dẫn */}
+              <div className="bg-teal-50 border-2 border-teal-300 rounded-xl p-4">
+                <h3 className="font-bold text-teal-800 mb-2">Kết nối hướng dẫn</h3>
+                <p className="text-sm text-teal-700">Học sinh thực tập theo lộ trình</p>
+              </div>
+            </div>
+
+            {/* Arrow down */}
+            <div className="flex justify-center">
+              <ArrowDown className="w-8 h-8 text-[#1E63F9]" />
+            </div>
+
+            {/* Row 4: Phương thức */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              <div className="bg-rose-50 border-2 border-rose-300 rounded-xl p-4">
+                <h3 className="font-bold text-rose-800 mb-2">Phương thức hoạt động</h3>
+                <p className="text-sm text-rose-700">Tại cộng đồng → Đặt link tư vấn 24/7</p>
+              </div>
+
+              <div className="bg-indigo-50 border-2 border-indigo-300 rounded-xl p-4">
+                <h3 className="font-bold text-indigo-800 mb-2">Nội dung</h3>
+                <p className="text-sm text-indigo-700">Tư vấn kết hợp với phân tích từ AI</p>
+              </div>
+
+              <div className="bg-cyan-50 border-2 border-cyan-300 rounded-xl p-4">
+                <h3 className="font-bold text-cyan-800 mb-2">Tổ chức</h3>
+                <p className="text-sm text-cyan-700">Nội dung cho đối tượng có nhu cầu</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Người đại diện theo pháp luật */}
+        {/* Section 3: Hình ảnh tiêu biểu */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
+          <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+            <GraduationCap className="w-6 h-6 text-[#1E63F9]" />
+            Hình ảnh hoạt động tiêu biểu
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep1.jpg" alt="Hoạt động hướng nghiệp 1" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep2.jpg" alt="Hoạt động hướng nghiệp 2" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep3.jpg" alt="Hoạt động hướng nghiệp 3" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep4.jpg" alt="Hoạt động hướng nghiệp 4" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep5.jpg" alt="Hoạt động hướng nghiệp 5" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+            <div className="aspect-video rounded-xl overflow-hidden border-2 border-slate-200">
+              <img src="/huongnghiep6.jpg" alt="Hoạt động hướng nghiệp 6" className="w-full h-full object-cover hover:scale-105 transition-transform" />
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4: Đồng hành với cộng đồng - Số liệu + Ảnh tài khoản đối tác */}
+        <div className="bg-gradient-to-r from-[#1E63F9] to-[#0D4FD9] rounded-2xl p-6 shadow-lg mb-8 text-white">
+          <h2 className="text-xl font-bold mb-6 flex items-center gap-3">
+            <Heart className="w-6 h-6" />
+            Đồng hành với cộng đồng trên nền tảng
+          </h2>
+          
+          {/* Số liệu - khung vàng */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
+              <p className="text-3xl font-black text-slate-900">50+</p>
+              <p className="text-sm text-slate-800 font-medium">Trường THPT</p>
+            </div>
+            <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
+              <p className="text-3xl font-black text-slate-900">10,000+</p>
+              <p className="text-sm text-slate-800 font-medium">Học sinh</p>
+            </div>
+            <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
+              <p className="text-3xl font-black text-slate-900">100+</p>
+              <p className="text-sm text-slate-800 font-medium">Chuyên gia tư vấn</p>
+            </div>
+            <div className="bg-amber-400 rounded-xl p-4 text-center border-4 border-amber-300">
+              <p className="text-3xl font-black text-slate-900">20+</p>
+              <p className="text-sm text-slate-800 font-medium">Đối tác doanh nghiệp</p>
+            </div>
+          </div>
+
+          {/* Ảnh tài khoản đối tác */}
+          <div>
+            <h3 className="font-semibold mb-4 text-white/90">Tài khoản đối tác trên nền tảng</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/20">
+                <img src="/minhchung1.png" alt="Tài khoản đối tác 1" className="w-full rounded-lg" />
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/20">
+                <img src="/minhchung2.png" alt="Tài khoản đối tác 2" className="w-full rounded-lg" />
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/20">
+                <img src="/minhchung3.png" alt="Tài khoản đối tác 3" className="w-full rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 5: Thông tin liên hệ */}
         <div className="bg-white rounded-2xl p-6 shadow-lg">
           <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-            <User className="w-6 h-6 text-[#1E63F9]" />
-            5. Người đại diện theo pháp luật của công ty
+            <Users className="w-6 h-6 text-[#1E63F9]" />
+            Thông tin liên hệ
           </h2>
           
           <div className="bg-gradient-to-r from-[#1E63F9]/5 to-[#1E63F9]/10 rounded-xl p-6 border border-[#1E63F9]/20">
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 bg-[#1E63F9] rounded-full flex items-center justify-center text-white flex-shrink-0">
-                <User className="w-8 h-8" />
+                <GraduationCap className="w-8 h-8" />
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-slate-900 text-xl">NGUYỄN ANH QUÂN</h3>
-                <p className="text-[#1E63F9] font-semibold">Giám đốc</p>
+                <h3 className="font-bold text-slate-900 text-xl">ThS. Nguyễn Gia Bách</h3>
+                <p className="text-[#1E63F9] font-semibold">Đại diện liên hệ</p>
                 
-                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-xs text-slate-500">Giới tính</p>
-                    <p className="text-slate-700">Nam</p>
+                <div className="mt-4 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-slate-400" />
+                    <span className="text-slate-700">0977 087 008</span>
                   </div>
-                  <div>
-                    <p className="text-xs text-slate-500">Sinh ngày</p>
-                    <p className="text-slate-700">27/03/1987</p>
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-slate-400" />
+                    <span className="text-slate-700">Giabachhanoi1405@gmail.com</span>
                   </div>
-                  <div>
-                    <p className="text-xs text-slate-500">Dân tộc</p>
-                    <p className="text-slate-700">Kinh</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-500">Quốc tịch</p>
-                    <p className="text-slate-700">Việt Nam</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-500">Số CCCD</p>
-                    <p className="text-slate-700">001087012547</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-500">Ngày cấp</p>
-                    <p className="text-slate-700">04/08/2022</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p className="text-xs text-slate-500">Nơi cấp</p>
-                    <p className="text-slate-700">Cục cảnh sát quản lý hành chính về trật tự xã hội</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p className="text-xs text-slate-500">Địa chỉ thường trú</p>
-                    <p className="text-slate-700">P112A1 Tập thể Phố Giảng Võ, Phường Giảng Võ, Quận Ba Đình, Thành phố Hà Nội, Việt Nam</p>
+                  <div className="flex items-center gap-3">
+                    <MapPin className="w-5 h-5 text-slate-400" />
+                    <span className="text-slate-700">Lô A14 đường Nguyễn Cảnh Dị, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội</span>
                   </div>
                 </div>
               </div>
@@ -249,8 +313,7 @@ function ProfilePage({ basePath = '' }) {
 
         {/* Footer */}
         <div className="text-center mt-8 text-slate-500 text-sm">
-          <p>TRƯỞNG PHÒNG</p>
-          <p className="mt-2">Sở Tài chính Thành phố Hà Nội</p>
+          <p>© 2025 InterEdu - Giải pháp giáo dục hướng nghiệp</p>
         </div>
       </div>
     </section>
