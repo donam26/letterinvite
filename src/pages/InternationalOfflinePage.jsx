@@ -229,7 +229,8 @@ function InternationalOfflinePage() {
         <div className="text-center text-white/80">
           <p className="mb-2">Xin chân thành cảm ơn và kính chúc Quý Đơn vị ngày càng phát triển bền vững!</p>
           <p className="text-white/60 text-sm">Trân trọng,</p>
-          <p className="font-bold text-[#FFD447]">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</p>
+          <p className="font-bold text-[#FFD447]">Đây là chương trình vì cộng động, Quý Trường (hoặc Quý Đơn vị) có thể liên hệ trực tiếp với chúng tôi để sử dụng cổng hướng nghiệp phục vụ cho mục tiêu tuyển sinh riêng của Quý Trường ( hoặc Quý Đơn vị)</p>
+          <p className=" mt-3 font-bold text-[#FFD447]">CÔNG TY TNHH GIẢI PHÁP GIÁO DỤC INTEREDU</p>
         </div>
       </div>
     </section>

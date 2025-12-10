@@ -184,17 +184,17 @@ function ProfilePage({ basePath = '' }) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
               <div className="bg-rose-50 border-2 border-rose-300 rounded-xl p-4">
                 <h3 className="font-bold text-rose-800 mb-2">Phương thức hoạt động</h3>
-                <p className="text-sm text-rose-700">Tại cộng đồng → Đặt link tư vấn 24/7</p>
+                <p className="text-sm text-rose-700">Đặt link tư vấn trực tiếp ô khảo sát cho học sunh đăng ký</p>
               </div>
 
               <div className="bg-indigo-50 border-2 border-indigo-300 rounded-xl p-4">
                 <h3 className="font-bold text-indigo-800 mb-2">Nội dung</h3>
-                <p className="text-sm text-indigo-700">Tư vấn kết hợp với phân tích từ AI</p>
+                <p className="text-sm text-indigo-700">Tư vấn học sinh từ phân tích của AI và nhu cầu của học sinh qua chatbot AI</p>
               </div>
 
               <div className="bg-cyan-50 border-2 border-cyan-300 rounded-xl p-4">
                 <h3 className="font-bold text-cyan-800 mb-2">Tổ chức</h3>
-                <p className="text-sm text-cyan-700">Nội dung cho đối tượng có nhu cầu</p>
+                <p className="text-sm text-cyan-700">Tổ chức ngày hội hướng nghiệp / Phát động các cuộc thi tuyên truyền</p>
               </div>
             </div>
           </div>
