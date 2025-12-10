@@ -207,7 +207,7 @@ function InternationalOnlinePage() {
           {/* Thông báo triển khai */}
           <div className="bg-gradient-to-r from-[#FFD447] to-[#FFC107] rounded-xl p-5 mb-6">
             <p className="text-slate-900 font-semibold text-center">
-              🚀 Chúng tôi bắt đầu triển khai từ ngày <strong>10/01/2026</strong>
+              🚀 Chúng tôi bắt đầu thay thế sử dụng nền tảng mới này từ ngày <strong>10/01/2026</strong>
             </p>
           </div>
 
