@@ -52,7 +52,7 @@ function LanguageCenterOfflinePage() {
 
         {/* Kính gửi */}
         <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
-          <p className="text-slate-900 font-bold text-lg mb-2">Kính gửi: Quý Đơn vị luyện thi ngoại ngữ: Tiếng Trung, Tiếng Hàn, Tiếng Nhật/ Tiếng Đức/ Tiếng Pháp / Tiếng TBN</p>
+          <p className="text-slate-900 font-bold text-lg mb-2">Kính gửi: Quý Đơn vị luyện thi ngoại ngữ: Tiếng Trung/ Tiếng Hàn/ Tiếng Nhật/ Tiếng Đức/ Tiếng Pháp / Tiếng TBN</p>
           <p className="text-slate-600">
             Công ty TNHH Giải pháp Giáo dục InterEdu xin gửi tới Quý Đơn vị lời chào trân trọng và lời chúc sức khỏe, thành công.
           </p>

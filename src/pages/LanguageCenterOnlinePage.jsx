@@ -52,7 +52,7 @@ function LanguageCenterOnlinePage() {
 
         {/* Kính gửi */}
         <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
-          <p className="text-slate-900 font-bold text-lg mb-2">Kính gửi: Quý Đơn vị luyện thi ngoại ngữ: Tiếng Trung, Tiếng Hàn, Tiếng Nhật/ Tiếng Đức/ Tiếng Pháp / Tiếng TBN</p>
+          <p className="text-slate-900 font-bold text-lg mb-2">Kính gửi: Quý Đơn vị luyện thi ngoại ngữ: Tiếng Trung/ Tiếng Hàn/ Tiếng Nhật/ Tiếng Đức/ Tiếng Pháp / Tiếng TBN</p>
           <p className="text-slate-600">
             Công ty TNHH Giải pháp Giáo dục InterEdu xin gửi tới Quý Đơn vị lời chào trân trọng và lời chúc sức khỏe, thành công.
           </p>
@@ -161,7 +161,7 @@ function LanguageCenterOnlinePage() {
               </div>
               <p className="text-sm text-slate-600 mb-1">01 lần duy nhất (đã bao gồm 8% VAT)</p>
               <p className="text-lg font-bold text-[#1E63F9]">Cam kết</p>
-              <p className="text-sm text-slate-600">tiếp cận trực tiếp với <strong>1,000 học sinh</strong> hàng năm theo năm sinh, khu vực địa lý, trường THPT</p>
+              <p className="text-sm text-slate-600">tiếp cận trực tiếp với <strong>100,000 học sinh</strong> hàng năm theo năm sinh, khu vực địa lý, trường THPT</p>
               <div className="mt-3 pt-3 border-t border-[#1E63F9]/20">
                 <p className="text-sm text-slate-500">5.000.000 VNĐ</p>
               </div>

@@ -121,7 +121,7 @@ function InternationalOnlinePage() {
               </div>
               <p className="text-sm text-slate-600 mb-1">01 lần duy nhất (đã bao gồm 8% VAT)</p>
               <p className="text-lg font-bold text-[#1E63F9]">Cam kết</p>
-              <p className="text-sm text-slate-600">tiếp cận trực tiếp với <strong>1,000 học sinh</strong> hàng năm</p>
+              <p className="text-sm text-slate-600">tiếp cận trực tiếp với <strong>100,000 học sinh</strong> hàng năm</p>
               <div className="mt-3 pt-3 border-t border-[#1E63F9]/20">
                 <p className="text-sm text-slate-500">5.000.000 VNĐ</p>
               </div>

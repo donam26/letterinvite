@@ -82,7 +82,7 @@ function UniversityOnlinePage() {
             {[
               'Chatbot AI tuyển sinh 24/7',
               'Miễn phí 12 tháng đầu',
-              'Tiếp cận 1,000+ học sinh/năm',
+              'Tiếp cận 100,000+ học sinh/năm',
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-[#1E63F9] flex-shrink-0" />
@@ -128,7 +128,7 @@ function UniversityOnlinePage() {
               <p className="text-sm text-slate-600 mb-1">Cung cấp và đào tạo AI về dữ liệu tuyển sinh tới cộng đồng học sinh</p>
               <p className="text-sm text-slate-600 mb-1">01 lần duy nhất (đã bao gồm 8% VAT)</p>
               <p className="text-lg font-bold text-[#1E63F9]">Cam kết</p>
-              <p className="text-sm text-slate-600">tiếp cận ít nhất <strong>1,000 mục tiêu</strong> theo tiêu chí tuyển sinh</p>
+              <p className="text-sm text-slate-600">tiếp cận ít nhất <strong>100,000 mục tiêu</strong> theo tiêu chí tuyển sinh</p>
               <div className="mt-3 pt-3 border-t border-[#1E63F9]/20">
                 <p className="text-sm text-slate-500">5.000.000 VNĐ</p>
               </div>

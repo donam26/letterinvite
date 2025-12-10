@@ -148,7 +148,7 @@ function ExamPrepPage() {
             </div>
             <p className="text-slate-600 mb-4">Cộng đồng hướng nghiệp trên website</p>
             <div className="space-y-2 mb-4">
-              {['Chatbot AI tuyển sinh 24/7', 'Độc quyền theo loại hình luyện thi', 'Tiếp cận 1,000+ học sinh/năm'].map((item, i) => (
+              {['Chatbot AI tuyển sinh 24/7', 'Độc quyền theo loại hình luyện thi', 'Tiếp cận 100,000+ học sinh/năm'].map((item, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-[#1E63F9]" />
                   <span className="text-sm text-slate-600">{item}</span>
