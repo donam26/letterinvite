@@ -4,14 +4,30 @@ import {
   ChevronLeft, FileText, Send, Globe, Phone, Mail,
   CheckCircle, Sparkles, Bot, Gift, HandMetal, Building2, Languages, Video
 } from 'lucide-react'
+import { submitToGoogleSheet } from '../utils/googleSheet'
 
 function LanguageCenterOnlinePage() {
   const navigate = useNavigate()
   const [form, setForm] = useState({ org: '', address: '', name: '', position: '', phone: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e) => { 
+  const handleSubmit = async (e) => { 
     e.preventDefault()
-    alert('Cảm ơn Quý Đơn vị đã đăng ký Gói Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động!') 
+    setIsSubmitting(true)
+    
+    const result = await submitToGoogleSheet({
+      formType: 'Online - Trung tâm ngoại ngữ',
+      ...form
+    })
+    
+    setIsSubmitting(false)
+    
+    if (result.success) {
+      alert('Cảm ơn Quý Đơn vị đã đăng ký Gói Đồng hành tham gia quy trình chuyển hoá tuyển sinh tự động!')
+      setForm({ org: '', address: '', name: '', position: '', phone: '' })
+    } else {
+      alert('Có lỗi xảy ra, vui lòng thử lại!')
+    }
   }
 
   return (
@@ -274,8 +290,8 @@ function LanguageCenterOnlinePage() {
                     placeholder="Số điện thoại" />
                 </div>
               </div>
-              <button type="submit" className="w-full py-4 bg-gradient-to-r from-[#1E63F9] to-[#0D4FD9] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all">
-                <Send className="w-5 h-5" /> Gửi đăng ký
+              <button type="submit" disabled={isSubmitting} className="w-full py-4 bg-gradient-to-r from-[#1E63F9] to-[#0D4FD9] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                <Send className="w-5 h-5" /> {isSubmitting ? 'Đang gửi...' : 'Gửi đăng ký'}
               </button>
             </form>
           </div>

@@ -266,7 +266,7 @@ function ProfilePage({ basePath = '' }) {
                 <img src="/minhchung2.png" alt="Tài khoản đối tác 2" className="w-full rounded-lg" />
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/20">
-                <img src="/minhchung3.png" alt="Tài khoản đối tác 3" className="w-full rounded-lg" />
+                <img src="/minhchung4.png" alt="Tài khoản đối tác 3" className="w-full rounded-lg" />
               </div>
             </div>
           </div>
