@@ -140,7 +140,7 @@ function ProfilePage({ basePath = '' }) {
                 <h3 className="font-bold text-purple-800 mb-2">Giới thiệu cộng đồng nghiệp edu.vn</h3>
                 <ul className="text-sm text-purple-700 space-y-1">
                   <li>→ Học sinh khám phá bản thân</li>
-                  <li>→ Học sinh tham gia GDNL</li>
+                  <li>→ Học sinh tham gia ĐGNL</li>
                   <li>→ Học sinh được định hướng và rèn luyện</li>
                 </ul>
               </div>
@@ -184,7 +184,7 @@ function ProfilePage({ basePath = '' }) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
               <div className="bg-rose-50 border-2 border-rose-300 rounded-xl p-4">
                 <h3 className="font-bold text-rose-800 mb-2">Phương thức hoạt động</h3>
-                <p className="text-sm text-rose-700">Đặt link tư vấn trực tiếp ô khảo sát cho học sunh đăng ký</p>
+                <p className="text-sm text-rose-700">Đặt link tư vấn trực tiếp ô khảo sát cho học sinh đăng ký</p>
               </div>
 
               <div className="bg-indigo-50 border-2 border-indigo-300 rounded-xl p-4">
@@ -295,11 +295,11 @@ function ProfilePage({ basePath = '' }) {
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-slate-400" />
-                    <span className="text-slate-700">Giabachhanoi1405@gmail.com</span>
+                    <span className="text-slate-700">bach.nguyen@interedu.ai.vn</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-slate-400" />
-                    <span className="text-slate-700">Lô A14 đường Nguyễn Cảnh Dị, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội</span>
+                    <span className="text-slate-700">Tầng 4, Toà nhà Bưu Điện, A14 Nguyễn Cảnh Dị, P. Định Công, Hà Nội</span>
                   </div>
                 </div>
               </div>

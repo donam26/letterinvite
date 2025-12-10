@@ -189,7 +189,7 @@ function LanguageCenterPage() {
               <p className="font-bold text-slate-900 mb-3">Đại diện liên hệ</p>
               <div className="space-y-2 text-slate-700 text-sm">
                 <p className="font-semibold">Nguyễn Gia Bách</p>
-                <p>0976.959.516 (Zalo)</p>
+                <p>0976959516 (Zalo)</p>
               </div>
             </div>
           </div>

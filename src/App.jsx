@@ -178,7 +178,7 @@ function IntroPage() {
             <div className="mt-6 pt-6 border-t">
               <p className="font-bold text-slate-900 mb-2">Liên hệ: ThS. Ngô Gia Bách</p>
               <p className="text-slate-600">Email: bach.nguyen@interedu.ai.vn</p>
-              <p className="text-slate-600">ĐT: 0976.959.516 (Zalo)</p>
+              <p className="text-slate-600">ĐT: 0976959516 (Zalo)</p>
             </div>
           </div>
         </div>

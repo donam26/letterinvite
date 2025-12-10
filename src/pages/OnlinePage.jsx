@@ -353,7 +353,7 @@ function OnlinePage() {
                 <p className="font-semibold">Nguyễn Gia Bách</p>
                 <p className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#1E63F9]" />
-                  0976.959.516 (Zalo)
+                  0976959516 (Zalo)
                 </p>
               </div>
             </div>

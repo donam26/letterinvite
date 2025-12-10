@@ -235,7 +235,7 @@ function LanguageCenterOfflinePage() {
               <p className="font-bold text-slate-900 mb-3">Đại diện liên hệ</p>
               <div className="space-y-2 text-slate-700 text-sm">
                 <p className="font-semibold">Nguyễn Gia Bách</p>
-                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-[#1E63F9]" /> 0976.959.516 (Zalo)</p>
+                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-[#1E63F9]" /> 0976959516 (Zalo)</p>
               </div>
             </div>
           </div>
