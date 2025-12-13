@@ -59,7 +59,7 @@ function Page1() {
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
             <Sparkles className="w-4 h-4 text-[#FFD447]" />
-            <span className="text-sm text-white font-medium">Hợp tác tuyển sinh 2024 – 2025</span>
+            <span className="text-sm text-white font-medium">Hợp tác tuyển sinh</span>
           </div>
         </div>
 

@@ -291,7 +291,7 @@ function ProfilePage({ basePath = '' }) {
                 <div className="mt-4 space-y-3">
                   <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-slate-400" />
-                    <span className="text-slate-700">0977 087 008</span>
+                    <span className="text-slate-700">0976959516</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-slate-400" />

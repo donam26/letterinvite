@@ -35,7 +35,7 @@ function LanguageCenterPage() {
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFD447] text-slate-900 font-medium mb-4">
             <Sparkles className="w-4 h-4" />
-            THƯ NGỎ HỢP TÁC TUYỂN SINH 2024 – 2025
+            THƯ NGỎ HỢP TÁC TUYỂN SINH
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-2">
             Đồng hành Hướng nghiệp
